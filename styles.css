@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url("img/background.png") center/cover no-repeat;
+    background-color: rgba(20, 20, 20, 0.8);
+    color: white;
+    position: relative;
+}
+
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav {
+    display: flex;
+    gap: 60px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.actions div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+}
+
+.actions a {
+    color: white;
+    text-decoration: none;
+}
+
+.lang .arrow1 {
+    width: 10px;
+    height: 6px;
+    margin-top: 2px;
+}
+
+
+.hero-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 800px;
+    z-index: 2;
+    padding-left: clamp(16px, 10vw, 256px);
+    
+    
+}
+
+.hero-text h1 {
+    font-family: 'Rubik Spray Paint';
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero-text button {
+    width: 370px;
+    height: 72px;
+    border-radius: 40px;
+    border: none;
+    background: #E30613;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero-images {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.pizza {
+    position: absolute;
+}
+
+.pizza.big {
+    right: 0;
+    bottom: 0;
+    width: min(40vw, 540px);
+}
+
+.pizza.small {
+    left: 0;
+    top: 166px;
+    width: min(20vw, 240px);
+}
+.novynky {
+    background: #FFF8F5;
+
+    padding: 44px clamp(20px, 6.94vw, 100px);
+}
+
+.novynky-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 44px;
+    justify-content: center;
+}
+
+.novynky-inner img {
+    width: 100%;
+    max-width: 384px;
+    aspect-ratio: 384 / 228;
+    object-fit: cover;
+    
+}
+.novynky-header {
+    max-width: 1440px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.novynky-title {
+    font-family: 'Rubik Spray Paint', cursive;
+    justify-content: center;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #2A2B2A;
+}
+
+.novynky-link {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.novynky-link a {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #2A2B2A;
+    text-decoration: none;
+    cursor: pointer;
+}
+.novynky-link span {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #2A2B2A;
+}
+
+.novynky-link .arrow2 {
+    width: 18px;
+    height: 30px;
+
+}
+.menu {
+    background: #FFA381;
+    padding: 80px 100px;
+}
+
+.menu-title {
+    font-family: 'Rubik Spray Paint', cursive;
+    font-size: 48px;
+    line-height: 60px;
+    color: #2A2B2A;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.menu-filters .filter {
+    padding: 10px 20px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.menu-filters .filter.active {
+    background: white;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-item {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 584px;
+    gap: 20px;
+    align-items: center;
+}
+
+.item-image img {
+    width: 182px;
+    height: 182px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.item-name {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item-desc {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2B2A;
+}
+
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-weight {
+    display: inline-block;
+    background: #FFA381;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    max-width: fit-content;
+}
+
+
+.item-price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.item-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.item-icons .icon {
+    background: #FFA381;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn {
+    background: #FFA381;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+}
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}

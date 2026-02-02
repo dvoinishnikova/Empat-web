@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQ Pizza</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="header">
+      <img class="logo" src="img/logo.png" alt="IQ Pizza">
+
+      <nav class="nav">
+        <a href="#">Меню</a>
+        <a href="#">Контакти</a>
+        <a href="#">Новинки</a>
+        <a href="#">Доставка</a>
+      </nav>
+
+      <div class="actions">
+        <div class="lang">
+          <img class="arrow1" src="img/arrow1.png" alt="UA">
+          <span>UA</span>
+        </div>
+
+        <div class="login">
+          <img src="img/login.png" alt="Увійти">
+          <a href="#">Увійти</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Гаряча піца до вас або за столик у IQ Pizza!</h1>
+        <p>
+          Сир тягнеться, тісто пухке, а насичений аромат свіжих інгредієнтів відчувається з першого подиху — справжній
+          смак Італії, який можна замовити онлайн або скуштувати в нашій піцерії.
+        </p>
+        <button>Замовити зараз</button>
+      </div>
+
+      <div class="hero-images">
+        <img class="pizza big" src="img/pizza1.png" alt="">
+        <img class="pizza small" src="img/pizza2.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <section class="novynky">
+  
+    <div class="novynky-header">
+      <h2 class="novynky-title">Новинки</h2>
+      <div class="novynky-link">
+        <a href="novynky.html">
+          <span>Всі новинки</span>
+          <img class="arrow2" src="img/arrow2.png" alt="arrow">
+        </a>
+        
+      </div>
+    </div>
+
+    <div class="novynky-inner">
+      <img src="img/novynka1.png" alt="">
+      <img src="img/novynka2.png" alt="">
+      <img src="img/novynka3.png" alt="">
+    </div>
+  </section>
+
+  <section class="menu">
+    <h2 class="menu-title">Меню</h2>
+
+    <div class="menu-filters">
+      <button class="filter active" data-filter="all">Все</button>
+      <button class="filter" data-filter="піци">Піци</button>
+      <button class="filter" data-filter="комбо">Комбо</button>
+      <button class="filter" data-filter="сендвічі">Сендвічі</button>
+      <button class="filter" data-filter="напої">Напої</button>
+    </div>
+
+    <div class="menu-item" data-category="піци">
+      <div class="item-image">
+        <img src="img/item1.png" alt="4 м'яса 30 см">
+      </div>
+
+      <div class="item-info">
+        <div class="item-top">
+          <h3 class="item-name">4 мʼяса 30 см</h3>
+          <button class="icon-btn">
+            <img src="img/favourite.png" alt="favorite">
+          </button>
+        </div>
+
+        <p class="item-desc">
+          Соус томатний, цибуля маринована, салямі баликова, ковбаски баварські...
+        </p>
+
+        <span class="item-weight">500 г</span>
+
+        <div class="item-bottom">
+          <span class="item-price">165 грн</span>
+          <button class="icon-btn">
+            <img src="img/plus.png" alt="add">
+          </button>
+        </div>
+      </div>
+    </div>
+      
+  </section>
+
+<script src="main.js"></script>
+</body>
+
+</html>
