@@ -15,13 +15,19 @@
   <header class="hero">
     <div class="header">
       <img class="logo" src="img/logo.png" alt="IQ Pizza">
+      <button class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
       <nav class="nav">
-        <a href="#">Меню</a>
-        <a href="#">Контакти</a>
-        <a href="#">Новинки</a>
-        <a href="#">Доставка</a>
+        <a href="#menu">Меню</a>
+        <a href="#contacts">Контакти</a>
+        <a href="#novynky">Новинки</a>
+        <a href="#promo">Доставка</a>
       </nav>
+
 
       <div class="actions">
         <div class="lang">
@@ -44,7 +50,7 @@
           Сир тягнеться, тісто пухке, а насичений аромат свіжих інгредієнтів відчувається з першого подиху — справжній
           смак Італії, який можна замовити онлайн або скуштувати в нашій піцерії.
         </p>
-        <button>Замовити зараз</button>
+        <button class="promo-btn">Замовити зараз</button>
       </div>
 
       <div class="hero-images">
@@ -54,7 +60,7 @@
     </div>
   </header>
 
-  <section class="novynky">
+  <section class="novynky" id="novynky">
   
     <div class="novynky-header">
       <h2 class="novynky-title">Новинки</h2>
@@ -74,7 +80,7 @@
     </div>
   </section>
 
-  <section class="menu">
+  <section class="menu" id="menu">
     <h2 class="menu-title">Меню</h2>
 
     <div class="menu-filters">
@@ -85,35 +91,364 @@
       <button class="filter" data-filter="напої">Напої</button>
     </div>
 
-    <div class="menu-item" data-category="піци">
-      <div class="item-image">
-        <img src="img/item1.png" alt="4 м'яса 30 см">
-      </div>
+    <div class="menu-items">
 
-      <div class="item-info">
-        <div class="item-top">
-          <h3 class="item-name">4 мʼяса 30 см</h3>
-          <button class="icon-btn">
-            <img src="img/favourite.png" alt="favorite">
-          </button>
+      <div class="menu-item" data-category="піци">
+        <div class="item-image">
+          <img src="img/item1.png" alt="4 м'яса 30 см">
         </div>
 
-        <p class="item-desc">
-          Соус томатний, цибуля маринована, салямі баликова, ковбаски баварські...
-        </p>
+        <div class="item-info">
+          <div class="item-top">
+            <h3 class="item-name">4 мʼяса 30 см</h3>
+            <button class="icon-btn">
+              <img src="img/favourite.png" alt="favorite">
+            </button>
+          </div>
 
-        <span class="item-weight">500 г</span>
+          <p class="item-desc">
+            Соус томатний, цибуля маринована, салямі баликова, ковбаски баварські...
+          </p>
 
-        <div class="item-bottom">
-          <span class="item-price">165 грн</span>
-          <button class="icon-btn">
-            <img src="img/plus.png" alt="add">
-          </button>
+          <span class="item-weight">500 г</span>
+
+          <div class="item-bottom">
+            <span class="item-price">165 грн</span>
+            <button class="icon-btn">
+              <img src="img/plus.png" alt="add">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="піци">
+        <div class="item-image">
+          <img src="img/item2.png" alt="Шинка Гриби 30 см">
+        </div>
+
+        <div class="item-info">
+          <div class="item-top">
+            <h3 class="item-name">Шинка Гриби 30 см</h3>
+            <button class="icon-btn">
+              <img src="img/favourite.png" alt="favorite">
+            </button>
+          </div>
+
+          <p class="item-desc">
+            Соус вершковий, шинка, печериці, сир моцарела, помідор
+          </p>
+
+          <span class="item-weight">460 г</span>
+
+          <div class="item-bottom">
+            <span class="item-price">159 грн</span>
+            <button class="icon-btn">
+              <img src="img/plus.png" alt="add">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="піци">
+        <div class="item-image">
+          <img src="img/item3.png" alt="Шинка BBQ 30 см">
+        </div>
+
+        <div class="item-info">
+          <div class="item-top">
+            <h3 class="item-name">Шинка BBQ 30 см</h3>
+            <button class="icon-btn">
+              <img src="img/favourite.png" alt="favorite">
+            </button>
+          </div>
+
+          <p class="item-desc">
+            Соус BBQ, шинка, сир моцарела, кукурудза, перець болгарський...
+          </p>
+
+          <span class="item-weight">450 г</span>
+
+          <div class="item-bottom">
+            <span class="item-price">165 грн</span>
+            <button class="icon-btn">
+              <img src="img/plus.png" alt="add">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item" data-category="піци">
+        <div class="item-image">
+          <img src="img/item4.png" alt="Грецька 30 см">
+        </div>
+
+        <div class="item-info">
+          <div class="item-top">
+            <h3 class="item-name">Грецька 30 см</h3>
+            <button class="icon-btn">
+              <img src="img/favourite.png" alt="favorite">
+            </button>
+          </div>
+
+          <p class="item-desc">
+            Соус вершовий, курка маринована, сир моцарела, помідори, салат Айсберг...
+          </p>
+
+          <span class="item-weight">565 г</span>
+
+          <div class="item-bottom">
+            <span class="item-price">209 грн</span>
+            <button class="icon-btn">
+              <img src="img/plus.png" alt="add">
+            </button>
+          </div>
         </div>
       </div>
     </div>
       
   </section>
+
+  <section class="quality" id="quality">
+
+    <div class="quality-container">
+      <div class="quality-left">
+        <h2 class="quality-title">
+          <span class="yellow">Якість</span>
+          <span class="white"> піци</span>
+        </h2>
+
+        <p class="quality-subtitle">
+          Як ми робимо її особливою
+        </p>
+
+        <ul class="quality-list">
+          <li class="quality-item">
+            <img src="img/feature1.png">
+            <span>Випічка на дровах</span>
+          </li>
+
+          <li class="quality-item right">
+            <img src="img/feature2.png">
+            <span>Преміальні інгредієнти</span>
+          </li>
+
+          <li class="quality-item">
+            <img src="img/feature3.png">
+            <span>Італійський стиль</span>
+          </li>
+
+          <li class="quality-item right">
+            <img src="img/feature4.png">
+            <span>Швидка доставка</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="quality-right">
+        <img src="img/pizzaquality.png" alt="Pizza">
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+  <div class="promo-container">
+
+    <div class="promo-image">
+      <img src="img/pizzapromo.png" alt="Promo pizza">
+    </div>
+
+    <div class="promo-card">
+      <span class="promo-label">СПЕЦІАЛЬНА ПРОПОЗИЦІЯ</span>
+
+      <h2 class="promo-title">
+        Отримай знижку <strong>-30%</strong><br>
+        на перше замовлення!
+      </h2>
+
+      <button class="promo-btn">Замовити зараз</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-overlay"></div>
+
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number">50+</span>
+        <span class="stat-text">Свіжих інгредієнтів</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">10 000+</span>
+        <span class="stat-text">Задоволених клієнтів</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">30 хв</span>
+        <span class="stat-text">Середній час доставки</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">500 000+</span>
+        <span class="stat-text">Піц приготовано</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews-container">
+
+      <h2 class="reviews-title">Відгуки</h2>
+
+      <div class="reviews-content">
+        <img class="review-img" src="img/review.png" alt="">
+
+        <div class="review-text">
+          <div class="review-info">
+            <h3 class="review-name">Анна</h3>
+            <p class="review-message">
+              Тут найкраща піца, яку я куштувала у своєму житті! Ніяка Італія не зрівняється з IQ Pizza!!!
+            </p>
+            <div class="review-stars">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+              <img src="img/star.png" alt="star">
+            </div>
+
+          </div>
+
+          <div class="review-arrows">
+            <button class="arrow arrow-left">
+              <img class="arrow2" src="img/arrow2.png" alt="left">
+            </button>
+
+            <button class="arrow arrow-right">
+              <img class="arrow2" src="img/arrow2.png" alt="right">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="review-btn">Залишити свій відгук</button>
+
+    </div>
+  </section>
+
+  <footer class="footer" id="contacts">
+  <div class="footer-top">
+
+    <div class="footer-logo-menu">
+      <img class="footer-logo" src="img/logo.png" alt="Logo">
+
+      <nav class="footer-nav">
+        <a href="#">Меню</a>
+        <a href="#">Контакти</a>
+        <a href="#">Новинки</a>
+        <a href="#">Доставка</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="img/instagram.png" alt="Instagram">
+        </a>
+        
+      </div>
+    </div>
+
+    <div class="footer-app">
+      <p>Завантажте наш застосунок!</p>
+      <div class="app-image">
+        <img src="img/qr.png" alt="App QR Code">
+      </div>
+    </div>
+
+    <div class="footer-hours">
+      <p>Час роботи ресторану</p>
+      <div class="hours">
+        <span>Пн - Нд</span>
+        <span>10:00 - 22:00</span>
+      </div>
+    </div>
+
+    <div class="footer-pickup">
+      <p>
+        Самовивіз<br />
+        Відкрито з 10:00 до 22:00
+      </p>
+
+
+      <div class="footer-contacts">
+        <a href="tel:+380681151010">+380 (68) 115 10 10</a>
+        <a href="tel:+380991151010">+380 (99) 115 10 10</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<div id="menuModal" class="modal">
+  <div class="modal-content pizza-modal">
+    <span class="close">&times;</span>
+
+    <div class="pizza-modal-left">
+      <img id="modalImage" src="" alt="Піца">
+    </div>
+
+    <div class="pizza-modal-right">
+      <div class="modal-header">
+        <h2 id="modalTitle">4 мʼяса 30 см</h2>
+        <span id="modalPrice" class="modal-price">165</span>
+      </div>
+
+      <div class="modal-weight">
+        <span id="modalWeight">500 г</span>
+      </div>
+
+      <p id="modalDesc" class="modal-desc"></p>
+
+      <div class="modal-options">
+        <h4>Бортик 30 см</h4>
+
+        <label>
+          <input type="radio" name="border" data-price="55" checked>
+          <span class="option-text">Бортик з крем сиром</span>
+          <span class="option-price">+55 грн</span>
+        </label>
+
+        <label>
+          <input type="radio" name="border" data-price="49">
+          <span class="option-text">Бортик з сиром сулугуні</span>
+          <span class="option-price">+49 грн</span>
+        </label>
+
+        <label>
+          <input type="radio" name="border" data-price="0">
+          <span class="option-text">Звичайний бортик</span>
+          
+        </label>
+      </div>
+
+      <div class="modal-bottom">
+        <div class="qty">
+          <button id="minus">−</button>
+          <span id="count">1</span>
+          <button id="plus">+</button>
+        </div>
+
+        <button class="add-btn">
+          Додати: <strong id="totalPrice">165 грн</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="main.js"></script>
 </body>
