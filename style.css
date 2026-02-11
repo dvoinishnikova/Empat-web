@@ -13,6 +13,10 @@ body {
     font-family: 'Comfortaa', sans-serif;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
 .hero {
     min-height: 100vh;
     background: url("img/background.png") center/cover no-repeat;
@@ -239,7 +243,7 @@ body {
     padding: 10px 20px;
     font-family: 'Comfortaa', sans-serif;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
     color: black;
     background: transparent;
     border: 2px solid black;
@@ -260,7 +264,7 @@ body {
 }
 
 .menu-item {
-    margin-bottom: 40px;
+    
     display: flex;
     flex-direction: row;
     background: #fff;
@@ -292,7 +296,7 @@ body {
 .item-name {
     font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .item-desc {
@@ -321,7 +325,7 @@ body {
 
 
 .item-price {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 24px;
 }
 
@@ -443,7 +447,7 @@ body {
 .quality-item span {
   font-family: "Comfortaa", sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -507,7 +511,7 @@ body {
 .promo-title {
   font-family: "Comfortaa", sans-serif;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 60px;
   color: #000;
 }
@@ -629,7 +633,7 @@ body {
 .review-name {
   font-family: "Comfortaa", sans-serif;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 60px;
 }
 
@@ -682,41 +686,33 @@ body {
 }
 
 .footer {
-  position: relative;
-  padding: 50px 100px;
-  color: white;
-  font-family: "Comfortaa", sans-serif;
-  overflow: hidden;
+  background: #000; 
+  background-image: url("img/footer.png");
+  color: #fff;
+  padding: 50px 0;
+  font-family: 'Comfortaa', sans-serif;
 }
 
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('img/footer.png') center/cover no-repeat;
-  background-color: rgba(20,20,20,0.7);
-  z-index: -1;
+.footer-container {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
+
+
 
 .footer-top {
   display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  justify-content: space-between;
-}
-
-.footer-logo-menu {
-  display: flex;
   align-items: center;
-  gap: 190px;
+  justify-content: space-between;
 }
 
 .footer-logo {
   width: 109px;
   height: 106px;
+  object-fit: contain;
 }
 
 .footer-nav {
@@ -725,9 +721,9 @@ body {
 }
 
 .footer-nav a {
-  color: white;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -736,43 +732,75 @@ body {
   gap: 36px;
 }
 
-.footer-social img {
-  width: 60px;
-  height: 60px;
+
+
+
+
+.footer-bottom {
+  display: flex;
+  gap: 102px;
 }
 
-.footer-app p,
-.footer-hours p,
-.footer-pickup p {
+.footer-title {
   font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 1.8;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 24px;
+
 }
 
-.app-image img {
+.footer-sub {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.footer-app {
+  width: 407px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.qr-box {
+  width: 204px;
+  height: 204px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+}
+
+.qr-box img {
   width: 166px;
   height: 166px;
 }
 
-.footer-hours .hours {
+.footer-hours {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hours {
   display: flex;
   gap: 70px;
+}
+
+.hours span {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .footer-pickup {
+  width: 317px;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
 
-.footer-pickup span {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 35px;
-}
 
 .footer-contacts {
   display: flex;
@@ -782,14 +810,12 @@ body {
 
 .footer-contacts a {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: underline;
-  color: white;
-  line-height: 35px;
+  color: #fff;
 }
 
 
-/* Модалка */
 .modal {
   display: none;
   position: fixed;
@@ -911,7 +937,7 @@ body {
   background: #FFA381;
   padding: 6px 12px;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .modal-desc {
@@ -929,12 +955,12 @@ body {
 
 .option-price {
   color: #962800;
-  font-weight: 700;
+  font-weight: 400;
   white-space: nowrap;
 }
 
 .option-text {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 
@@ -1433,7 +1459,7 @@ body {
 
   .nav a {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     text-decoration: none;
     transition: 0.2s;
