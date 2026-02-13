@@ -705,7 +705,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: -20px;
 }
 
 .footer-logo {
@@ -1508,6 +1507,14 @@ h4 {
   .burger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
 
   .mobile-nav {
     position: fixed;
@@ -1887,11 +1894,14 @@ h4 {
   }
 
   .footer-container {
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   .footer-bottom {
     display: none;
