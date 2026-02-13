@@ -7,19 +7,38 @@
   <title>IQ Pizza</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body>
 
   <header class="hero">
+
     <div class="header">
+
       <img class="logo" src="img/logo.png" alt="IQ Pizza">
+      <div class="header-actions">
+        <div class="lang-login">
+          <div class="lang">
+
+            <img class="arrow1" src="img/arrow1.png" alt="UA">
+            <span>UA</span>
+          </div>
+
+          <div class="login">
+
+            <img src="img/login.png" alt="Увійти">
+            <span>Увійти</span>
+          </div>
+        </div>
+      </div>
+
       <button class="burger" id="burger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
 
       <nav class="nav">
         <a href="#menu">Меню</a>
@@ -27,6 +46,25 @@
         <a href="#novynky">Новинки</a>
         <a href="#promo">Доставка</a>
       </nav>
+
+      <nav class="mobile-nav" id="mobileMenu">
+
+
+        <h2 class="mobile-title">Меню</h2>
+
+        <div class="mobile-links">
+          <a href="#menu">Меню</a>
+          <a href="#contacts">Контакти</a>
+          <a href="#novynky">Новинки</a>
+          <a href="#promo">Доставка</a>
+        </div>
+
+        <div class="mobile-footer">IQ Pizza 2026</div>
+      </nav>
+
+
+
+
 
 
       <div class="actions">
@@ -61,15 +99,15 @@
   </header>
 
   <section class="novynky" id="novynky">
-  
+
     <div class="novynky-header">
       <h2 class="novynky-title">Новинки</h2>
       <div class="novynky-link">
         <a href="novynky.html">
-          <span>Всі новинки</span>
+
           <img class="arrow2" src="img/arrow2.png" alt="arrow">
         </a>
-        
+
       </div>
     </div>
 
@@ -93,7 +131,7 @@
 
     <div class="menu-items">
 
-      <div class="menu-item" data-category="піци">
+      <div class="menu-item" data-id="pizza1" data-category="піци">
         <div class="item-image">
           <img src="img/item1.png" alt="4 м'яса 30 см">
         </div>
@@ -101,9 +139,13 @@
         <div class="item-info">
           <div class="item-top">
             <h3 class="item-name">4 мʼяса 30 см</h3>
-            <button class="icon-btn">
-              <img src="img/favourite.png" alt="favorite">
+            <button class="fav-btn">
+              <svg class="heart" viewBox="0 0 24 24">
+                <path
+                  d="M12 21C12 21 4 14 4 9.5C4 7 6 5 8.5 5C10.2 5 11.4 6 12 7C12.6 6 13.8 5 15.5 5C18 5 20 7 20 9.5C20 14 12 21 12 21Z" />
+              </svg>
             </button>
+
           </div>
 
           <p class="item-desc">
@@ -121,7 +163,7 @@
         </div>
       </div>
 
-      <div class="menu-item" data-category="піци">
+      <div class="menu-item" data-id="pizza2" data-category="піци">
         <div class="item-image">
           <img src="img/item2.png" alt="Шинка Гриби 30 см">
         </div>
@@ -129,8 +171,11 @@
         <div class="item-info">
           <div class="item-top">
             <h3 class="item-name">Шинка Гриби 30 см</h3>
-            <button class="icon-btn">
-              <img src="img/favourite.png" alt="favorite">
+            <button class="fav-btn">
+              <svg class="heart" viewBox="0 0 24 24">
+                <path
+                  d="M12 21C12 21 4 14 4 9.5C4 7 6 5 8.5 5C10.2 5 11.4 6 12 7C12.6 6 13.8 5 15.5 5C18 5 20 7 20 9.5C20 14 12 21 12 21Z" />
+              </svg>
             </button>
           </div>
 
@@ -149,7 +194,7 @@
         </div>
       </div>
 
-      <div class="menu-item" data-category="піци">
+      <div class="menu-item" data-id="pizza3" data-category="піци">
         <div class="item-image">
           <img src="img/item3.png" alt="Шинка BBQ 30 см">
         </div>
@@ -157,8 +202,11 @@
         <div class="item-info">
           <div class="item-top">
             <h3 class="item-name">Шинка BBQ 30 см</h3>
-            <button class="icon-btn">
-              <img src="img/favourite.png" alt="favorite">
+            <button class="fav-btn">
+              <svg class="heart" viewBox="0 0 24 24">
+                <path
+                  d="M12 21C12 21 4 14 4 9.5C4 7 6 5 8.5 5C10.2 5 11.4 6 12 7C12.6 6 13.8 5 15.5 5C18 5 20 7 20 9.5C20 14 12 21 12 21Z" />
+              </svg>
             </button>
           </div>
 
@@ -177,7 +225,7 @@
         </div>
       </div>
 
-      <div class="menu-item" data-category="піци">
+      <div class="menu-item" data-id="pizza4" data-category="піци">
         <div class="item-image">
           <img src="img/item4.png" alt="Грецька 30 см">
         </div>
@@ -185,8 +233,11 @@
         <div class="item-info">
           <div class="item-top">
             <h3 class="item-name">Грецька 30 см</h3>
-            <button class="icon-btn">
-              <img src="img/favourite.png" alt="favorite">
+            <button class="fav-btn">
+              <svg class="heart" viewBox="0 0 24 24">
+                <path
+                  d="M12 21C12 21 4 14 4 9.5C4 7 6 5 8.5 5C10.2 5 11.4 6 12 7C12.6 6 13.8 5 15.5 5C18 5 20 7 20 9.5C20 14 12 21 12 21Z" />
+              </svg>
             </button>
           </div>
 
@@ -205,7 +256,7 @@
         </div>
       </div>
     </div>
-      
+
   </section>
 
   <section class="quality" id="quality">
@@ -251,28 +302,28 @@
   </section>
 
   <section class="promo">
-  <div class="promo-container">
+    <div class="promo-container">
 
-    <div class="promo-image">
-      <img src="img/pizzapromo.png" alt="Promo pizza">
+      <div class="promo-image">
+        <img src="img/pizzapromo.png" alt="Promo pizza">
+      </div>
+
+      <div class="promo-card">
+        <span class="promo-label">СПЕЦІАЛЬНА ПРОПОЗИЦІЯ</span>
+
+        <h2 class="promo-title">
+          Отримай знижку <strong>-30%</strong><br>
+          на перше замовлення!
+        </h2>
+
+        <button class="promo-btn">Замовити зараз</button>
+      </div>
+
     </div>
+  </section>
 
-    <div class="promo-card">
-      <span class="promo-label">СПЕЦІАЛЬНА ПРОПОЗИЦІЯ</span>
-
-      <h2 class="promo-title">
-        Отримай знижку <strong>-30%</strong><br>
-        на перше замовлення!
-      </h2>
-
-      <button class="promo-btn">Замовити зараз</button>
-    </div>
-
-  </div>
-</section>
-
-<section class="stats">
-  <div class="stats-overlay"></div>
+  <section class="stats">
+    <div class="stats-overlay"></div>
 
     <div class="stats-container">
       <div class="stat-item">
@@ -312,11 +363,11 @@
               Тут найкраща піца, яку я куштувала у своєму житті! Ніяка Італія не зрівняється з IQ Pizza!!!
             </p>
             <div class="review-stars">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
-              <img src="img/star.png" alt="star">
+              <img class="star" src="img/star.png" alt="star">
+              <img class="star" src="img/star.png" alt="star">
+              <img class="star" src="img/star.png" alt="star">
+              <img class="star" src="img/star.png" alt="star">
+              <img class="star" src="img/star.png" alt="star">
             </div>
 
           </div>
@@ -338,122 +389,174 @@
     </div>
   </section>
 
-<footer class="footer" id="contacts">
-  <div class="footer-container">
+  <footer class="footer" id="contacts">
+    <div class="footer-container">
 
-    <div class="footer-top">
-      <img class="footer-logo" src="img/logo.png" alt="Logo">
+      <div class="footer-top">
+        <img class="footer-logo" src="img/logo.png" alt="Logo">
 
-      <nav class="footer-nav">
-        <a href="#">Меню</a>
-        <a href="#">Контакти</a>
-        <a href="#">Новинки</a>
-        <a href="#">Доставка</a>
-      </nav>
+        <nav class="nav" id="nav">
+          <a href="#menu">Меню</a>
+          <a href="#contacts">Контакти</a>
+          <a href="#novynky">Новинки</a>
+          <a href="#promo">Доставка</a>
+        </nav>
 
-      <div class="footer-social">
-        <a href="https://facebook.com">
-          <img src="img/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://instagram.com">
-          <img src="img/instagram.png" alt="Instagram">
-        </a>
+        <div class="footer-social">
+          <a href="https://facebook.com">
+            <img src="img/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://instagram.com">
+            <img src="img/instagram.png" alt="Instagram">
+          </a>
+        </div>
       </div>
+
+
+      <div class="footer-bottom">
+
+        <div class="footer-app">
+          <p class="footer-title">Завантажте наш застосунок!</p>
+          <div class="qr-box">
+            <img src="img/qr.png" alt="QR Code">
+          </div>
+        </div>
+
+        <div class="footer-hours">
+          <p class="footer-title">Час роботи ресторану</p>
+          <div class="hours">
+            <span>Пн - Нд</span>
+            <span>10:00 - 22:00</span>
+          </div>
+        </div>
+
+        <div class="footer-pickup">
+          <div>
+            <p class="footer-title">Самовивіз</p>
+            <p class="footer-sub">Відкрито з 10:00 до 22:00</p>
+          </div>
+
+          <div class="footer-contacts">
+            <a href="tel:+380681151010">+380 (68) 115 10 10</a>
+            <a href="tel:+380991151010">+380 (99) 115 10 10</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="footer-bottom-mobile">
+        <div class="footer-left">
+          <div class="footer-phones">
+            <a href="tel:+380681151010">+380 (68) 115 10 10</a>
+            <a href="tel:+380991151010">+380 (99) 115 10 10</a>
+          </div>
+
+          <div class="footer-app-block">
+            <div class="qr-wrapper">
+              <img src="img/qr.png" alt="QR Code">
+            </div>
+            <div class="footer-app-text">
+              Завантажте наш застосунок!
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="footer-info">
+
+          <div class="footer-pickup-block">
+            <div class="footer-title">Самовивіз</div>
+            <div class="footer-sub">Відкрито з 10:00 до 22:00</div>
+          </div>
+
+          <div class="footer-hours-block">
+            <div class="footer-title">Час роботи ресторану</div>
+            <div class="footer-hours-row">
+              <span>Пн - Нд</span>
+              <span>10:00 - 22:00</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
+  </footer>
 
 
-    <div class="footer-bottom">
+  <div id="menuModal" class="modal">
+    <div class="modal-content pizza-modal">
+      <span class="close">&times;</span>
 
-      <div class="footer-app">
-        <p class="footer-title">Завантажте наш застосунок!</p>
-        <div class="qr-box">
-          <img src="img/qr.png" alt="QR Code">
-        </div>
+      <div class="pizza-modal-left">
+        <img id="modalImage" src="" alt="Піца">
       </div>
 
-      <div class="footer-hours">
-        <p class="footer-title">Час роботи ресторану</p>
-        <div class="hours">
-          <span>Пн - Нд</span>
-          <span>10:00 - 22:00</span>
+      <div class="pizza-modal-right">
+        <div class="modal-header">
+          <div class="modal-title-row">
+            <h2 id="modalTitle">4 мʼяса 30 см</h2>
+
+            <button class="modal-fav" id="modalFav">
+              <svg class="heart" viewBox="0 0 24 24">
+                <path
+                  d="M12 21C12 21 4 14 4 9.5C4 7 6 5 8.5 5C10.2 5 11.4 6 12 7C12.6 6 13.8 5 15.5 5C18 5 20 7 20 9.5C20 14 12 21 12 21Z" />
+              </svg>
+            </button>
+
+          </div>
+
+          <span id="modalPrice" class="modal-price">165 грн</span>
+        </div>
+
+        <div class="modal-weight">
+          <span id="modalWeight">500 г</span>
+        </div>
+
+        <p id="modalDesc" class="modal-desc"></p>
+
+        <div class="modal-options">
+          <h4>Бортик 30 см</h4>
+
+          <label>
+            <input type="radio" name="border" data-price="55" checked>
+            <span class="option-text">Бортик з крем сиром</span>
+            <span class="option-price">+55 грн</span>
+          </label>
+
+          <label>
+            <input type="radio" name="border" data-price="49">
+            <span class="option-text">Бортик з сиром сулугуні</span>
+            <span class="option-price">+49 грн</span>
+          </label>
+
+          <label>
+            <input type="radio" name="border" data-price="0">
+            <span class="option-text">Звичайний бортик</span>
+
+          </label>
+        </div>
+
+        <div class="modal-bottom">
+          <div class="qty">
+            <button id="minus">−</button>
+            <span id="count">1</span>
+            <button id="plus">+</button>
+          </div>
+
+          <button class="add-btn">
+            Додати: <strong id="totalPrice">165 грн</strong>
+          </button>
         </div>
       </div>
-
-      <div class="footer-pickup">
-        <div>
-          <p class="footer-title">Самовивіз</p>
-          <p class="footer-sub">Відкрито з 10:00 до 22:00</p>
-        </div>
-
-        <div class="footer-contacts">
-          <a href="tel:+380681151010">+380 (68) 115 10 10</a>
-          <a href="tel:+380991151010">+380 (99) 115 10 10</a>
-        </div>
-      </div>
-
     </div>
   </div>
-</footer>
 
-
-<div id="menuModal" class="modal">
-  <div class="modal-content pizza-modal">
-    <span class="close">&times;</span>
-
-    <div class="pizza-modal-left">
-      <img id="modalImage" src="" alt="Піца">
-    </div>
-
-    <div class="pizza-modal-right">
-      <div class="modal-header">
-        <h2 id="modalTitle">4 мʼяса 30 см</h2>
-        <span id="modalPrice" class="modal-price">165</span>
-      </div>
-
-      <div class="modal-weight">
-        <span id="modalWeight">500 г</span>
-      </div>
-
-      <p id="modalDesc" class="modal-desc"></p>
-
-      <div class="modal-options">
-        <h4>Бортик 30 см</h4>
-
-        <label>
-          <input type="radio" name="border" data-price="55" checked>
-          <span class="option-text">Бортик з крем сиром</span>
-          <span class="option-price">+55 грн</span>
-        </label>
-
-        <label>
-          <input type="radio" name="border" data-price="49">
-          <span class="option-text">Бортик з сиром сулугуні</span>
-          <span class="option-price">+49 грн</span>
-        </label>
-
-        <label>
-          <input type="radio" name="border" data-price="0">
-          <span class="option-text">Звичайний бортик</span>
-          
-        </label>
-      </div>
-
-      <div class="modal-bottom">
-        <div class="qty">
-          <button id="minus">−</button>
-          <span id="count">1</span>
-          <button id="plus">+</button>
-        </div>
-
-        <button class="add-btn">
-          Додати: <strong id="totalPrice">165 грн</strong>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
